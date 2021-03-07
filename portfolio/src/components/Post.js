@@ -33,7 +33,7 @@ export default function Post() {
           Welcome to my page
         </h2>
 
-        <div className="grid md:grid-col-2 lg:grid-col-3 gap-12">
+        <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-8">
           {postData &&
             postData.map((post, index) => (
               <article>
