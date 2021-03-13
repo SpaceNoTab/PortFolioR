@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
+
 export default function Project() {
   const [projectData, setProjectData] = useState(null);
   useEffect(() => {
@@ -60,7 +61,7 @@ export default function Project() {
                     href={project.link}
                     rel="noopener norefferer"
                     target="_blank"
-                    className="text-red-500 font-bold hover:underline hover:text-red-400"
+                    className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl"
                   >
                     View the Project{""}
                     <span role="img" aria-label="right pointer">
