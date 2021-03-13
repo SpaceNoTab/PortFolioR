@@ -6,7 +6,7 @@ export default function Project() {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_types=="project"]{
+        `*[_type=="project"]{
     title,
     date,
     place,
@@ -46,7 +46,7 @@ export default function Project() {
                 <div className="text-gray-500 text-xs space-x-4">
                   <span>
                     <strong className="font-bold">Finished on</strong>:{""}
-                    {new Date(project.date.toLocalDateString())}
+                    {new Date(project.date).toLocaleDateString()}
                   </span>
                   <span>
                     <strong className="font-bold">Company</strong>:{""}

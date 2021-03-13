@@ -32,7 +32,7 @@ export default function SinglePost() {
     "authorImage": author->image
     }`
       )
-      .then((data) => setSinglepost(data[0]))
+      .then((data) => setSinglePost(data[0]))
       .catch(console.error);
   }, [slug]);
 
